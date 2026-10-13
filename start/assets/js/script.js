@@ -59,9 +59,9 @@ console.log(persona[chiave]);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num1 = 17;
+let num1 = 18;
 let num2 = 18;
-let num3 = 19;
+let num3 = 18;
 
 if(num1 > num2 && num1 > num3){
    console.log(num1)
@@ -69,7 +69,7 @@ if(num1 > num2 && num1 > num3){
    console.log(num2)
 } else if (num3 > num2 && num3 > num1) {
    console.log(num3)
-} else if (num3 === num1 && num3 === num2 && num1 === num2 && num1 === num3 && num2 === num1 && num2 === num3){
+} else if (num3 === num1 && num1 === num2 && num2 === num3 ){
    console.log('Pareggio')
 };
 /* ESERCIZIO 6 — E-commerce: spedizione
@@ -94,13 +94,21 @@ if (totale >= 50){
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-// const myArray = [42, 'ciao', true]
+const myArray = [42, 'ciao', true]
 
 
-//    if(myArray[0] === Number){
-//       for ( i = 0; 1 < 3; i++)
-//       console.log('il ${myArray[0] e un numero}')
-//    }
+   
+      for ( let i = 0; i < myArray.length; i++){
+         if(typeof myArray[i] === 'number'){
+            console.log(` ${myArray[i]} e un numero`)
+            } else if (typeof myArray[i] === 'string' ){
+               console.log(` ${myArray[i]} e una stringa`)
+            } else if (typeof myArray[i] === 'boolean' ){
+               console.log(` ${myArray[i]} e una boolean`)
+            }
+    }
+         
+   
 
 
 
@@ -113,7 +121,7 @@ if (totale >= 50){
 
 const mioArray = [];
 
-mioArray.push(1,2,3,4,5);
+mioArray.push(1, 2, 3, 4, 5);
 console.log(`array: ${mioArray} ed e lungo ${mioArray.length}`);
 
 /* ESERCIZIO 9 — Carrello con splice
@@ -125,8 +133,9 @@ console.log(`array: ${mioArray} ed e lungo ${mioArray.length}`);
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 const arrayScuola = ['Penna', 'Quaderno', 'Zaino', 'Astuccio'];
-console.log(`array: ${arrayScuola}`)
-arrayScuola.splice(1,1,'Diario');
+arrayScuola.splice(1,1);
+console.log(`rimozione: ${arrayScuola}`)
+arrayScuola.splice(1,0,'Diario');
 console.log(`sostituzione Quaderno: ${arrayScuola}`);
 
 /* ESERCIZIO 10 — Cerca un articolo
@@ -137,13 +146,20 @@ console.log(`sostituzione Quaderno: ${arrayScuola}`);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const arrayProdotti = ['Penna', 'Quaderno', 'Zaino']
- const carrello = ['Zaino']
-console.log(`il prodotto: ${arrayProdotti[2]}    disponibilita: ${carrello.includes('Zaino')}`)
 
 
-   console.log(`posizione prodotto: ${arrayProdotti.indexOf('Zaino')} presente nell arrayProdotti: ${arrayProdotti.includes('Zaino')}`)
-    
+//NON AVEVO CAPITO MINIMAMENTE LA TRACCIA
+
+const arrayProdotti = ['Penna', 'Quaderno', 'Zaino'];
+let cercato = 'Zaino';
+let serch = arrayProdotti.includes(cercato);
+
+if(serch){
+   let controlloZaino = arrayProdotti.indexOf(cercato);
+   console.log(`Zaino e in  carrello: ${serch}`)
+} else {
+   console.log(`lo zaino non e nel carrello`)
+}
 
 /* ESERCIZIO 11 — Lista utenti
    Array utenti di 3 oggetti { nome, eta }.
@@ -152,6 +168,8 @@ console.log(`il prodotto: ${arrayProdotti[2]}    disponibilita: ${carrello.inclu
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+
+
 
 /* ESERCIZIO 12 — Inventario disponibili
    Array prodotti di 4 oggetti { nome, prezzo, disponibile }.
