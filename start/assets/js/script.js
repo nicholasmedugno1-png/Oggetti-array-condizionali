@@ -78,11 +78,12 @@ if(num1 > num2 && num1 > num3){
    Stampa: 'Totale carrello: 35€ — Spedizione: 9.90€ — Totale finale: 44.90€'
    Risolvi una volta con if/else e una volta con ternario.
 */
-let totale = 35;
-let costoSpedizione = 9.90;
+let totale = 30;
+let costoSpedizione;
 if (totale >= 50){
-   console.log(`Totale carrello: ${totale}€ — Spedizione: 0€ — Totale finale: ${totale}`)
+   console.log(`Totale carrello: ${totale}€ — Spedizione: Gratuita — Totale finale: ${totale}`)
 } else {
+   costoSpedizione = 9.90
    console.log(`Totale carrello: ${totale}€ — Spedizione: ${costoSpedizione}€ — Totale finale: ${totale + costoSpedizione}€`)
 };
 
