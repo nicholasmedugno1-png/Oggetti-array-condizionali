@@ -157,7 +157,7 @@ let serch = arrayProdotti.includes(cercato);
 
 if(serch){
    let controlloZaino = arrayProdotti.indexOf(cercato);
-   console.log(`Zaino e in  carrello: ${serch}`)
+   console.log(`Zaino e in  carrello: ${serch}, in posizione ${controlloZaino}`)
 } else {
    console.log(`lo zaino non e nel carrello`)
 }
