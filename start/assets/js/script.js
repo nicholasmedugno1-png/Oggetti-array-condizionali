@@ -59,17 +59,17 @@ console.log(persona[chiave]);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-let num1 = 18;
-let num2 = 18;
-let num3 = 18;
+let num1 = 178;
+let num2 = 184;
+let num3 = 184;
 
 if(num1 > num2 && num1 > num3){
-   console.log(num1)
+   console.log(`il numero piu grande e:${num1}`)
 } else if (num2 > num1 && num2 > num3){
-   console.log(num2)
+   console.log(`il numero piu grande e:${num2}`)
 } else if (num3 > num2 && num3 > num1) {
-   console.log(num3)
-} else if (num3 === num1 && num1 === num2 && num2 === num3 ){
+   console.log(`il numero piu grande e:${num2}`)
+} else {
    console.log('Pareggio')
 };
 /* ESERCIZIO 6 — E-commerce: spedizione
